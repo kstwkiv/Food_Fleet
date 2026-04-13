@@ -1,0 +1,13 @@
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\bin\Debug\net10.0\FoodFleet.Shared.Messaging.deps.json
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\bin\Debug\net10.0\FoodFleet.Shared.Messaging.dll
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\bin\Debug\net10.0\FoodFleet.Shared.Messaging.pdb
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.csproj.AssemblyReference.cache
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.AssemblyInfoInputs.cache
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.AssemblyInfo.cs
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.csproj.CoreCompileInputs.cache
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.sourcelink.json
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.dll
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\refint\FoodFleet.Shared.Messaging.dll
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\FoodFleet.Shared.Messaging.pdb
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Messaging\obj\Debug\net10.0\ref\FoodFleet.Shared.Messaging.dll

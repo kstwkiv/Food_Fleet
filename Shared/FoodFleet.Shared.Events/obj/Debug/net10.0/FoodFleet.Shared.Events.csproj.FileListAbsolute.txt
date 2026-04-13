@@ -1,0 +1,12 @@
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\bin\Debug\net10.0\FoodFleet.Shared.Events.deps.json
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\bin\Debug\net10.0\FoodFleet.Shared.Events.dll
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\bin\Debug\net10.0\FoodFleet.Shared.Events.pdb
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.GeneratedMSBuildEditorConfig.editorconfig
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.AssemblyInfoInputs.cache
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.AssemblyInfo.cs
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.csproj.CoreCompileInputs.cache
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.sourcelink.json
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.dll
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\refint\FoodFleet.Shared.Events.dll
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\FoodFleet.Shared.Events.pdb
+D:\.net\FoodFleetMicroservices\Shared\FoodFleet.Shared.Events\obj\Debug\net10.0\ref\FoodFleet.Shared.Events.dll
