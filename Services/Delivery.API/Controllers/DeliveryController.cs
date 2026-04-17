@@ -1,8 +1,6 @@
 using System.Security.Claims;
 using Delivery.API.Application.Commands;
-using Delivery.API.Application.DTOs;
 using Delivery.API.Application.Interfaces;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,20 +11,18 @@ namespace Delivery.API.Controllers;
 [Authorize]
 public class DeliveryController : ControllerBase
 {
-    private readonly IMediator _mediator;
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly IDeliveryService _deliveryService;
 
-    public DeliveryController(IMediator mediator, IUnitOfWork unitOfWork)
+    public DeliveryController(IDeliveryService deliveryService)
     {
-        _mediator = mediator;
-        _unitOfWork = unitOfWork;
+        _deliveryService = deliveryService;
     }
 
     [HttpPost("assign")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Assign([FromBody] AssignDeliveryCommand command)
     {
-        var result = await _mediator.Send(command);
+        var result = await _deliveryService.AssignAsync(command);
         return Ok(result);
     }
 
@@ -34,7 +30,7 @@ public class DeliveryController : ControllerBase
     [Authorize(Roles = "DeliveryAgent")]
     public async Task<IActionResult> UpdateLocation([FromBody] UpdateLocationCommand command)
     {
-        var result = await _mediator.Send(command);
+        var result = await _deliveryService.UpdateLocationAsync(command);
         if (!result) return NotFound();
         return Ok("Location updated.");
     }
@@ -43,7 +39,7 @@ public class DeliveryController : ControllerBase
     [Authorize(Roles = "DeliveryAgent,Admin")]
     public async Task<IActionResult> Complete(Guid orderId)
     {
-        var result = await _mediator.Send(new CompleteDeliveryCommand(orderId));
+        var result = await _deliveryService.CompleteAsync(new CompleteDeliveryCommand(orderId));
         if (!result) return NotFound();
         return Ok("Delivery completed.");
     }
@@ -51,19 +47,8 @@ public class DeliveryController : ControllerBase
     [HttpGet("{orderId}")]
     public async Task<IActionResult> GetByOrder(Guid orderId)
     {
-        var delivery = await _unitOfWork.Deliveries.GetByOrderIdAsync(orderId);
+        var delivery = await _deliveryService.GetByOrderAsync(orderId);
         if (delivery == null) return NotFound();
-
-        return Ok(new DeliveryDto
-        {
-            Id = delivery.Id,
-            OrderId = delivery.OrderId,
-            AgentId = delivery.AgentId,
-            Status = delivery.Status,
-            CurrentLat = delivery.CurrentLat,
-            CurrentLng = delivery.CurrentLng,
-            AssignedAt = delivery.AssignedAt,
-            CompletedAt = delivery.CompletedAt
-        });
+        return Ok(delivery);
     }
 }

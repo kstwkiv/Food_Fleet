@@ -1,9 +1,9 @@
 using System.Security.Claims;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Payment.API.Application.Commands;
 using Payment.API.Application.DTOs;
+using Payment.API.Application.Interfaces;
 
 namespace Payment.API.Controllers;
 
@@ -12,11 +12,11 @@ namespace Payment.API.Controllers;
 [Authorize]
 public class PaymentsController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly IPaymentService _paymentService;
 
-    public PaymentsController(IMediator mediator)
+    public PaymentsController(IPaymentService paymentService)
     {
-        _mediator = mediator;
+        _paymentService = paymentService;
     }
 
     [HttpPost("process")]
@@ -25,7 +25,7 @@ public class PaymentsController : ControllerBase
     {
         var customerId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-        var result = await _mediator.Send(new ProcessPaymentCommand(
+        var result = await _paymentService.ProcessAsync(new ProcessPaymentCommand(
             request.OrderId,
             customerId,
             request.Amount,

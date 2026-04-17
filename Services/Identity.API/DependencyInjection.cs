@@ -1,11 +1,10 @@
-using System.Reflection;
 using FluentValidation;
 using FoodFleet.Shared.Messaging;
 using Identity.API.Application.Interfaces;
+using Identity.API.Application.Services;
 using Identity.API.Infrastructure.Persistence;
 using Identity.API.Infrastructure.Persistence.Repositories;
 using Identity.API.Infrastructure.Services;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,11 +24,9 @@ public static class DependencyInjection
         services.AddScoped<IJwtTokenService, JwtTokenService>();
         services.AddScoped<IPasswordService, PasswordService>();
         services.AddScoped<IEmailService, EmailService>();
+        services.AddScoped<IAuthService, AuthService>();
 
-        services.AddMediatR(cfg =>
-            cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-
-        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
 
         services.AddRabbitMqMessaging(configuration);
 

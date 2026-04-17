@@ -1,19 +1,19 @@
 using FoodFleet.Shared.Events.Orders;
 using MassTransit;
-using MediatR;
 using Microsoft.Extensions.Logging;
 using Payment.API.Application.Commands;
+using Payment.API.Application.Interfaces;
 
 namespace Payment.API.Infrastructure.Consumers;
 
 public class OrderPlacedConsumer : IConsumer<OrderPlacedEvent>
 {
-    private readonly IMediator _mediator;
+    private readonly IPaymentService _paymentService;
     private readonly ILogger<OrderPlacedConsumer> _logger;
 
-    public OrderPlacedConsumer(IMediator mediator, ILogger<OrderPlacedConsumer> logger)
+    public OrderPlacedConsumer(IPaymentService paymentService, ILogger<OrderPlacedConsumer> logger)
     {
-        _mediator = mediator;
+        _paymentService = paymentService;
         _logger = logger;
     }
 
@@ -21,10 +21,11 @@ public class OrderPlacedConsumer : IConsumer<OrderPlacedEvent>
     {
         _logger.LogInformation("Processing payment for Order {OrderId}", context.Message.OrderId);
 
-        await _mediator.Send(new ProcessPaymentCommand(
+        await _paymentService.ProcessAsync(new ProcessPaymentCommand(
             context.Message.OrderId,
             context.Message.CustomerId,
             context.Message.TotalAmount,
-            context.Message.PaymentMethod));
+            context.Message.PaymentMethod),
+            context.CancellationToken);
     }
 }

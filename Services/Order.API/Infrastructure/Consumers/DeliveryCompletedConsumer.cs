@@ -1,26 +1,28 @@
 using FoodFleet.Shared.Events.Delivery;
 using MassTransit;
-using MediatR;
 using Microsoft.Extensions.Logging;
 using Order.API.Application.Commands;
+using Order.API.Application.Interfaces;
 using Order.API.Domain.Enums;
 
 namespace Order.API.Infrastructure.Consumers;
 
 public class DeliveryCompletedConsumer : IConsumer<DeliveryCompletedEvent>
 {
-    private readonly IMediator _mediator;
+    private readonly IOrderService _orderService;
     private readonly ILogger<DeliveryCompletedConsumer> _logger;
 
-    public DeliveryCompletedConsumer(IMediator mediator, ILogger<DeliveryCompletedConsumer> logger)
+    public DeliveryCompletedConsumer(IOrderService orderService, ILogger<DeliveryCompletedConsumer> logger)
     {
-        _mediator = mediator;
+        _orderService = orderService;
         _logger = logger;
     }
 
     public async Task Consume(ConsumeContext<DeliveryCompletedEvent> context)
     {
         _logger.LogInformation("Delivery completed for Order {OrderId}", context.Message.OrderId);
-        await _mediator.Send(new UpdateOrderStatusCommand(context.Message.OrderId, OrderStatus.Delivered));
+        await _orderService.UpdateStatusAsync(
+            new UpdateOrderStatusCommand(context.Message.OrderId, OrderStatus.Delivered),
+            context.CancellationToken);
     }
 }

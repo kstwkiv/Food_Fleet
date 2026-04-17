@@ -1,11 +1,9 @@
 using System.Security.Claims;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Order.API.Application.Commands;
 using Order.API.Application.DTOs;
 using Order.API.Application.Interfaces;
-using Order.API.Application.Queries;
 using Order.API.Domain.Enums;
 
 namespace Order.API.Controllers;
@@ -15,13 +13,11 @@ namespace Order.API.Controllers;
 [Authorize]
 public class OrdersController : ControllerBase
 {
-    private readonly IMediator _mediator;
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly IOrderService _orderService;
 
-    public OrdersController(IMediator mediator, IUnitOfWork unitOfWork)
+    public OrdersController(IOrderService orderService)
     {
-        _mediator = mediator;
-        _unitOfWork = unitOfWork;
+        _orderService = orderService;
     }
 
     [HttpPost]
@@ -39,14 +35,14 @@ public class OrdersController : ControllerBase
             request.PaymentMethod,
             request.Items);
 
-        var result = await _mediator.Send(command);
+        var result = await _orderService.PlaceOrderAsync(command);
         return Ok(result);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
-        var result = await _mediator.Send(new GetOrderByIdQuery(id));
+        var result = await _orderService.GetByIdAsync(id);
         if (result == null) return NotFound();
         return Ok(result);
     }
@@ -54,7 +50,7 @@ public class OrdersController : ControllerBase
     [HttpGet("customer/{customerId}")]
     public async Task<IActionResult> GetHistory(Guid customerId)
     {
-        var result = await _mediator.Send(new GetOrderHistoryQuery(customerId));
+        var result = await _orderService.GetHistoryAsync(customerId);
         return Ok(result);
     }
 
@@ -63,7 +59,7 @@ public class OrdersController : ControllerBase
     public async Task<IActionResult> Cancel(Guid id)
     {
         var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
-        var result = await _mediator.Send(new CancelOrderCommand(id, userId));
+        var result = await _orderService.CancelAsync(new CancelOrderCommand(id, userId));
         if (!result) return BadRequest("Cannot cancel order.");
         return Ok("Order cancelled.");
     }
@@ -72,33 +68,15 @@ public class OrdersController : ControllerBase
     [Authorize(Roles = "RestaurantOwner,Admin")]
     public async Task<IActionResult> GetByRestaurant(Guid restaurantId)
     {
-        var orders = await _unitOfWork.Orders.GetByRestaurantIdAsync(restaurantId);
-        return Ok(orders.Select(o => new OrderDto
-        {
-            Id = o.Id,
-            CustomerId = o.CustomerId,
-            RestaurantId = o.RestaurantId,
-            DeliveryAddress = o.DeliveryAddress,
-            Status = o.Status,
-            TotalAmount = o.TotalAmount,
-            PaymentMethod = o.PaymentMethod.ToString(),
-            CreatedAt = o.CreatedAt,
-            Items = o.OrderItems.Select(i => new OrderItemDto
-            {
-                MenuItemId = i.MenuItemId,
-                MenuItemName = i.MenuItemName,
-                Quantity = i.Quantity,
-                UnitPrice = i.UnitPrice,
-                Customizations = i.Customizations
-            }).ToList()
-        }));
+        var orders = await _orderService.GetByRestaurantAsync(restaurantId);
+        return Ok(orders);
     }
 
     [HttpPatch("{id}/status")]
     [Authorize(Roles = "RestaurantOwner,Admin")]
     public async Task<IActionResult> UpdateStatus(Guid id, [FromBody] OrderStatus status)
     {
-        var result = await _mediator.Send(new UpdateOrderStatusCommand(id, status));
+        var result = await _orderService.UpdateStatusAsync(new UpdateOrderStatusCommand(id, status));
         if (!result) return NotFound();
         return Ok("Status updated.");
     }

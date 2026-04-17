@@ -1,10 +1,9 @@
-using System.Reflection;
 using FoodFleet.Shared.Messaging;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Payment.API.Application.Interfaces;
+using Payment.API.Application.Services;
 using Payment.API.Infrastructure.Consumers;
 using Payment.API.Infrastructure.Persistence;
 using Payment.API.Infrastructure.Persistence.Repositories;
@@ -21,9 +20,7 @@ public static class DependencyInjection
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-        services.AddMediatR(cfg =>
-            cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+        services.AddScoped<IPaymentService, PaymentService>();
 
         services.AddRabbitMqMessaging(configuration, x =>
         {

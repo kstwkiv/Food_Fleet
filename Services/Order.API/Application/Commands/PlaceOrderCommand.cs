@@ -1,4 +1,3 @@
-using MediatR;
 using Order.API.Application.DTOs;
 using Order.API.Domain.Enums;
 
@@ -10,4 +9,4 @@ public record PlaceOrderCommand(
     Guid RestaurantId,
     string DeliveryAddress,
     PaymentMethod PaymentMethod,
-    List<OrderItemDto> Items) : IRequest<OrderDto>;
+    List<OrderItemDto> Items);

@@ -1,19 +1,19 @@
 using Delivery.API.Application.Commands;
+using Delivery.API.Application.Interfaces;
 using FoodFleet.Shared.Events.Orders;
 using MassTransit;
-using MediatR;
 using Microsoft.Extensions.Logging;
 
 namespace Delivery.API.Infrastructure.Consumers;
 
 public class OrderReadyConsumer : IConsumer<OrderStatusChangedEvent>
 {
-    private readonly IMediator _mediator;
+    private readonly IDeliveryService _deliveryService;
     private readonly ILogger<OrderReadyConsumer> _logger;
 
-    public OrderReadyConsumer(IMediator mediator, ILogger<OrderReadyConsumer> logger)
+    public OrderReadyConsumer(IDeliveryService deliveryService, ILogger<OrderReadyConsumer> logger)
     {
-        _mediator = mediator;
+        _deliveryService = deliveryService;
         _logger = logger;
     }
 
@@ -22,10 +22,11 @@ public class OrderReadyConsumer : IConsumer<OrderStatusChangedEvent>
         if (context.Message.NewStatus == "Ready")
         {
             _logger.LogInformation("Order {OrderId} is ready - assigning delivery agent", context.Message.OrderId);
-            await _mediator.Send(new AssignDeliveryCommand(
+            await _deliveryService.AssignAsync(new AssignDeliveryCommand(
                 context.Message.OrderId,
                 context.Message.CustomerId,
-                context.Message.CustomerEmail));
+                context.Message.CustomerEmail),
+                context.CancellationToken);
         }
     }
 }

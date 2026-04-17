@@ -1,11 +1,9 @@
 using System.Security.Claims;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.API.Application.Commands;
 using Restaurant.API.Application.DTOs;
 using Restaurant.API.Application.Interfaces;
-using Restaurant.API.Application.Queries;
 
 namespace Restaurant.API.Controllers;
 
@@ -13,12 +11,12 @@ namespace Restaurant.API.Controllers;
 [Route("api/v1/[controller]")]
 public class RestaurantsController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly IRestaurantService _restaurantService;
     private readonly IUnitOfWork _unitOfWork;
 
-    public RestaurantsController(IMediator mediator, IUnitOfWork unitOfWork)
+    public RestaurantsController(IRestaurantService restaurantService, IUnitOfWork unitOfWork)
     {
-        _mediator = mediator;
+        _restaurantService = restaurantService;
         _unitOfWork = unitOfWork;
     }
 
@@ -26,7 +24,7 @@ public class RestaurantsController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> GetAll([FromQuery] string? search)
     {
-        var result = await _mediator.Send(new GetRestaurantsQuery(search));
+        var result = await _restaurantService.GetAllAsync(search);
         return Ok(result);
     }
 
@@ -56,7 +54,7 @@ public class RestaurantsController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> GetById(Guid id)
     {
-        var result = await _mediator.Send(new GetRestaurantByIdQuery(id));
+        var result = await _restaurantService.GetByIdAsync(id);
         if (result == null) return NotFound();
         return Ok(result);
     }
@@ -79,7 +77,7 @@ public class RestaurantsController : ControllerBase
             request.MinimumOrderAmount,
             request.EstimatedDeliveryMinutes);
 
-        var result = await _mediator.Send(command);
+        var result = await _restaurantService.CreateAsync(command);
         return Ok(result);
     }
 
@@ -87,14 +85,8 @@ public class RestaurantsController : ControllerBase
     [Authorize(Roles = "RestaurantOwner,Admin")]
     public async Task<IActionResult> ToggleAvailability(Guid id)
     {
-        var restaurant = await _unitOfWork.Restaurants.GetByIdAsync(id);
-        if (restaurant == null) return NotFound();
-
-        restaurant.IsOpen = !restaurant.IsOpen;
-        restaurant.UpdatedAt = DateTime.UtcNow;
-        _unitOfWork.Restaurants.Update(restaurant);
-        await _unitOfWork.SaveChangesAsync();
-
-        return Ok(new { restaurant.Id, restaurant.IsOpen });
+        var isOpen = await _restaurantService.ToggleAvailabilityAsync(id);
+        if (isOpen == null) return NotFound();
+        return Ok(new { Id = id, IsOpen = isOpen.Value });
     }
 }

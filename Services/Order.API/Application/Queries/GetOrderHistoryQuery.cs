@@ -1,6 +1,5 @@
-using MediatR;
 using Order.API.Application.DTOs;
 
 namespace Order.API.Application.Queries;
 
-public record GetOrderHistoryQuery(Guid CustomerId) : IRequest<List<OrderDto>>;
+public record GetOrderHistoryQuery(Guid CustomerId);

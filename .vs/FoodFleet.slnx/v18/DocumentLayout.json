@@ -3,8 +3,92 @@
   "WorkspaceRootPath": "D:\\.net\\FoodFleetMicroservices\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|d:\\.net\\foodfleetmicroservices\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\adminrestaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\adminrestaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|d:\\.net\\foodfleetmicroservices\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB553804-CB78-AC88-8F4B-AF129AB14CA2}|Services\\Payment.API\\Payment.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\payment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB553804-CB78-AC88-8F4B-AF129AB14CA2}|Services\\Payment.API\\Payment.API.csproj|solutionrelative:services\\payment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D460F12-D4A6-1485-325A-4CB0077E0C03}|Services\\Order.API\\Order.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\order.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D460F12-D4A6-1485-325A-4CB0077E0C03}|Services\\Order.API\\Order.API.csproj|solutionrelative:services\\order.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\notification.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\delivery.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|solutionrelative:services\\delivery.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\notification.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\infrastructure\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\infrastructure\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\identity.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|d:\\.net\\foodfleetmicroservices\\shared\\foodfleet.shared.messaging\\messagingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\delivery.api\\delivery.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|solutionrelative:services\\delivery.api\\delivery.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|d:\\.net\\foodfleetmicroservices\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\notification.api\\infrastructure\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +127,8 @@
       "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\infrastructure\\consumers\\userregisteredconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|d:\\.net\\foodfleetmicroservices\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D460F12-D4A6-1485-325A-4CB0077E0C03}|Services\\Order.API\\Order.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D460F12-D4A6-1485-325A-4CB0077E0C03}|Services\\Order.API\\Order.API.csproj|solutionrelative:services\\order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|d:\\.net\\foodfleetmicroservices\\services\\delivery.api\\application\\dtos\\deliverydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,30 +150,224 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T07:04:10.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "Services\\Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T07:04:02.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminRestaurantsController.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\AdminRestaurantsController.cs",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\Controllers\\AdminRestaurantsController.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\AdminRestaurantsController.cs",
+              "RelativeToolTip": "Services\\Restaurant.API\\Controllers\\AdminRestaurantsController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAA1wHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T07:03:48.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Payment.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Payment.API\\appsettings.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Payment.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Payment.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:49.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Order.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Order.API\\appsettings.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Order.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Order.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:37.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\appsettings.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Notification.API\\appsettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:25.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Delivery.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Delivery.API\\appsettings.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Delivery.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Delivery.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:05.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\DependencyInjection.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\DependencyInjection.cs",
+              "RelativeToolTip": "Services\\Identity.API\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T04:48:00.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T04:47:27.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Identity.API.csproj",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Identity.API.csproj",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Identity.API.csproj",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Identity.API.csproj",
+              "RelativeToolTip": "Services\\Identity.API\\Identity.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-15T04:47:06.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:59:18.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAcwJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:57:20.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminUsersController.cs",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:49:38.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\appsettings.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Identity.API\\appsettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T10:45:19.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Services\\Identity.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T10:41:17.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\appsettings.Development.json",
+              "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.Development.json",
+              "RelativeToolTip": "Services\\Identity.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T10:41:13.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\ApiGateway\\Program.cs",
               "RelativeDocumentMoniker": "ApiGateway\\Program.cs",
               "ToolTip": "D:\\.net\\FoodFleetMicroservices\\ApiGateway\\Program.cs",
               "RelativeToolTip": "ApiGateway\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAkwEwAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T10:22:08.931Z"
+              "WhenOpened": "2026-04-10T10:22:08.931Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Program.cs",
               "RelativeDocumentMoniker": "Services\\Restaurant.API\\Program.cs",
               "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Program.cs",
               "RelativeToolTip": "Services\\Restaurant.API\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAwwGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T10:19:46.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 26,
               "Title": "OrderPlacedConsumer.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Consumers\\OrderPlacedConsumer.cs",
               "RelativeDocumentMoniker": "Services\\Notification.API\\Infrastructure\\Consumers\\OrderPlacedConsumer.cs",
@@ -121,20 +379,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Services\\Notification.API\\DependencyInjection.cs",
               "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\DependencyInjection.cs",
               "RelativeToolTip": "Services\\Notification.API\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:40:32.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:40:32.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Services\\Notification.API\\Infrastructure\\Services\\EmailService.cs",
@@ -146,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\Program.cs",
               "RelativeDocumentMoniker": "Services\\Notification.API\\Program.cs",
@@ -158,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 29,
               "Title": "Notification.API.http",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\Notification.API.http",
               "RelativeDocumentMoniker": "Services\\Notification.API\\Notification.API.http",
@@ -170,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 30,
               "Title": "UserRegisteredConsumer.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Consumers\\UserRegisteredConsumer.cs",
               "RelativeDocumentMoniker": "Services\\Notification.API\\Infrastructure\\Consumers\\UserRegisteredConsumer.cs",
@@ -182,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 23,
               "Title": "RabbitMqSettings.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\Configuration\\RabbitMqSettings.cs",
               "RelativeDocumentMoniker": "Shared\\FoodFleet.Shared.Messaging\\Configuration\\RabbitMqSettings.cs",
@@ -194,31 +451,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\appsettings.json",
               "RelativeDocumentMoniker": "Services\\Restaurant.API\\appsettings.json",
               "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\appsettings.json",
               "RelativeToolTip": "Services\\Restaurant.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-10T04:42:58.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\ApiGateway\\appsettings.json",
               "RelativeDocumentMoniker": "ApiGateway\\appsettings.json",
               "ToolTip": "D:\\.net\\FoodFleetMicroservices\\ApiGateway\\appsettings.json",
               "RelativeToolTip": "ApiGateway\\appsettings.json",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAuwKMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAswOEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-10T04:42:41.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 22,
               "Title": "MessagingExtensions.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\MessagingExtensions.cs",
               "RelativeDocumentMoniker": "Shared\\FoodFleet.Shared.Messaging\\MessagingExtensions.cs",
@@ -230,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "FoodFleet.Shared.Messaging.csproj",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj",
               "RelativeDocumentMoniker": "Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj",
@@ -242,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 31,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Order.API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Services\\Order.API\\Controllers\\OrdersController.cs",
@@ -254,19 +511,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "MenuController.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\MenuController.cs",
               "RelativeDocumentMoniker": "Services\\Restaurant.API\\Controllers\\MenuController.cs",
               "ToolTip": "D:\\.net\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\MenuController.cs",
               "RelativeToolTip": "Services\\Restaurant.API\\Controllers\\MenuController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T04:04:04.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 32,
               "Title": "DeliveryDto.cs",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Delivery.API\\Application\\DTOs\\DeliveryDto.cs",
               "RelativeDocumentMoniker": "Services\\Delivery.API\\Application\\DTOs\\DeliveryDto.cs",
@@ -278,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 25,
               "Title": "Delivery.API.csproj",
               "DocumentMoniker": "D:\\.net\\FoodFleetMicroservices\\Services\\Delivery.API\\Delivery.API.csproj",
               "RelativeDocumentMoniker": "Services\\Delivery.API\\Delivery.API.csproj",

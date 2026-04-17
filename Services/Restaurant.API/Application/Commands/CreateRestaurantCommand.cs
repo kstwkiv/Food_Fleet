@@ -1,4 +1,3 @@
-using MediatR;
 using Restaurant.API.Application.DTOs;
 
 namespace Restaurant.API.Application.Commands;
@@ -13,4 +12,4 @@ public record CreateRestaurantCommand(
     string CuisineTypes,
     string OperatingHours,
     double MinimumOrderAmount,
-    int EstimatedDeliveryMinutes) : IRequest<RestaurantDto>;
+    int EstimatedDeliveryMinutes);

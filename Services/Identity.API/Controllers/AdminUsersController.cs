@@ -18,6 +18,7 @@ public class AdminUsersController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> GetAll([FromQuery] string? role)
     {
         var users = await _unitOfWork.Users.GetAllAsync();

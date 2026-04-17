@@ -16,10 +16,7 @@ D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\Humanizer
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\MassTransit.dll
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\MassTransit.Abstractions.dll
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
-D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\MediatR.dll
-D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\MediatR.Contracts.dll
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
 D:\.net\FoodFleetMicroservices\Services\Identity.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll

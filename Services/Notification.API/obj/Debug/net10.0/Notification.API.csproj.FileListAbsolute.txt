@@ -10,7 +10,6 @@ D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\MassT
 D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\MassTransit.Abstractions.dll
 D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\MassTransit.RabbitMqTransport.dll
 D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
 D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\.net\FoodFleetMicroservices\Services\Notification.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll

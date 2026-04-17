@@ -1,11 +1,10 @@
-using System.Reflection;
 using FluentValidation;
 using FoodFleet.Shared.Messaging;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Restaurant.API.Application.Interfaces;
+using Restaurant.API.Application.Services;
 using Restaurant.API.Infrastructure.Consumers;
 using Restaurant.API.Infrastructure.Persistence;
 using Restaurant.API.Infrastructure.Persistence.Repositories;
@@ -22,11 +21,9 @@ public static class DependencyInjection
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IRestaurantService, RestaurantService>();
 
-        services.AddMediatR(cfg =>
-            cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-
-        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
 
         services.AddRabbitMqMessaging(configuration, x =>
         {

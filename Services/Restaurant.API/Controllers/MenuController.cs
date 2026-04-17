@@ -1,9 +1,8 @@
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.API.Application.Commands;
 using Restaurant.API.Application.DTOs;
-using Restaurant.API.Application.Queries;
+using Restaurant.API.Application.Interfaces;
 
 namespace Restaurant.API.Controllers;
 
@@ -12,17 +11,17 @@ namespace Restaurant.API.Controllers;
 [Authorize]
 public class MenuController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly IRestaurantService _restaurantService;
 
-    public MenuController(IMediator mediator)
+    public MenuController(IRestaurantService restaurantService)
     {
-        _mediator = mediator;
+        _restaurantService = restaurantService;
     }
 
     [HttpGet("restaurant/{restaurantId}")]
     public async Task<IActionResult> GetMenu(Guid restaurantId)
     {
-        var result = await _mediator.Send(new GetMenuByRestaurantQuery(restaurantId));
+        var result = await _restaurantService.GetMenuAsync(restaurantId);
         return Ok(result);
     }
 
@@ -37,7 +36,7 @@ public class MenuController : ControllerBase
             request.Price,
             request.DietaryTags);
 
-        var result = await _mediator.Send(command);
+        var result = await _restaurantService.CreateMenuItemAsync(command);
         return Ok(result);
     }
 }

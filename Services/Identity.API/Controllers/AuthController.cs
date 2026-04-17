@@ -1,7 +1,6 @@
 using Identity.API.Application.Commands;
 using Identity.API.Application.DTOs;
 using Identity.API.Application.Interfaces;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,18 +10,18 @@ namespace Identity.API.Controllers;
 [Route("api/v1/[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly IAuthService _authService;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IPasswordService _passwordService;
     private readonly IEmailService _emailService;
 
     public AuthController(
-        IMediator mediator,
+        IAuthService authService,
         IUnitOfWork unitOfWork,
         IPasswordService passwordService,
         IEmailService emailService)
     {
-        _mediator = mediator;
+        _authService = authService;
         _unitOfWork = unitOfWork;
         _passwordService = passwordService;
         _emailService = emailService;
@@ -40,7 +39,7 @@ public class AuthController : ControllerBase
                 request.MobileNumber,
                 request.Role);
 
-            var result = await _mediator.Send(command);
+            var result = await _authService.RegisterAsync(command);
             return Ok(result);
         }
         catch (Exception ex)
@@ -55,7 +54,7 @@ public class AuthController : ControllerBase
         try
         {
             var command = new LoginCommand(request.Email, request.Password);
-            var result = await _mediator.Send(command);
+            var result = await _authService.LoginAsync(command);
             return Ok(result);
         }
         catch (Exception ex)

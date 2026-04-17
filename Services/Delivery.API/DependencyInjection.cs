@@ -1,10 +1,9 @@
-using System.Reflection;
 using Delivery.API.Application.Interfaces;
+using Delivery.API.Application.Services;
 using Delivery.API.Infrastructure.Consumers;
 using Delivery.API.Infrastructure.Persistence;
 using Delivery.API.Infrastructure.Persistence.Repositories;
 using FoodFleet.Shared.Messaging;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,9 +20,7 @@ public static class DependencyInjection
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-        services.AddMediatR(cfg =>
-            cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+        services.AddScoped<IDeliveryService, DeliveryService>();
 
         services.AddRabbitMqMessaging(configuration, x =>
         {
