@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "Delivery.API.Controllers.AgentsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/agents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.AgentsController",
+    "Method": "GetMyProfile",
+    "RelativePath": "api/v1/agents/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.AgentsController",
+    "Method": "ToggleAvailability",
+    "RelativePath": "api/v1/agents/me/availability",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.AgentsController",
+    "Method": "Register",
+    "RelativePath": "api/v1/agents/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Delivery.API.Controllers.RegisterAgentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.DeliveryController",
+    "Method": "GetByOrder",
+    "RelativePath": "api/v1/Delivery/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.DeliveryController",
+    "Method": "Complete",
+    "RelativePath": "api/v1/Delivery/{orderId}/complete",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.DeliveryController",
+    "Method": "Assign",
+    "RelativePath": "api/v1/Delivery/assign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Delivery.API.Application.Commands.AssignDeliveryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Delivery.API.Controllers.DeliveryController",
+    "Method": "UpdateLocation",
+    "RelativePath": "api/v1/Delivery/location",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Delivery.API.Application.Commands.UpdateLocationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

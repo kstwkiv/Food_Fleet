@@ -1,0 +1,35 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ApiGateway\\ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Delivery.API\\Delivery.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Identity.API\\Identity.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Notification.API\\Notification.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Order.API\\Order.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Payment.API\\Payment.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Restaurant.API\\Restaurant.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

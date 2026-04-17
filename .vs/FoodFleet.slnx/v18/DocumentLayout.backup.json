@@ -1,0 +1,518 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\restaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABE66B30-BD47-A7B2-B17B-5BA67959B026}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\restaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CE87262-60E0-C364-269C-5D9F81E9EC2F}|Services\\Restaurant.API\\Restaurant.API.csproj|solutionrelative:services\\restaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB553804-CB78-AC88-8F4B-AF129AB14CA2}|Services\\Payment.API\\Payment.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\payment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB553804-CB78-AC88-8F4B-AF129AB14CA2}|Services\\Payment.API\\Payment.API.csproj|solutionrelative:services\\payment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\delivery.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|solutionrelative:services\\delivery.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\infrastructure\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\infrastructure\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\identity.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D9FFFAA-E044-90D5-E4E5-CE0C2C29BA1C}|Services\\Identity.API\\Identity.API.csproj|solutionrelative:services\\identity.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\shared\\foodfleet.shared.messaging\\messagingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|solutionrelative:shared\\foodfleet.shared.messaging\\messagingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\shared\\foodfleet.shared.messaging\\configuration\\rabbitmqsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|solutionrelative:shared\\foodfleet.shared.messaging\\configuration\\rabbitmqsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\shared\\foodfleet.shared.messaging\\foodfleet.shared.messaging.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BC8E1BB3-7F6B-176F-6CA1-5E33C01214FB}|Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj|solutionrelative:shared\\foodfleet.shared.messaging\\foodfleet.shared.messaging.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\delivery.api\\delivery.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|solutionrelative:services\\delivery.api\\delivery.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\infrastructure\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\infrastructure\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\notification.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\notification.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\notification.api\\infrastructure\\consumers\\userregisteredconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{039FF3AA-705F-51F8-F75B-5D12C6267BA4}|Services\\Notification.API\\Notification.API.csproj|solutionrelative:services\\notification.api\\infrastructure\\consumers\\userregisteredconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D460F12-D4A6-1485-325A-4CB0077E0C03}|Services\\Order.API\\Order.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D460F12-D4A6-1485-325A-4CB0077E0C03}|Services\\Order.API\\Order.API.csproj|solutionrelative:services\\order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|c:\\users\\pawas\\onedrive\\desktop\\backpro\\foodfleetmicroservices\\services\\delivery.api\\application\\dtos\\deliverydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7EB072-2159-1010-A7E6-CCB699BA9A4C}|Services\\Delivery.API\\Delivery.API.csproj|solutionrelative:services\\delivery.api\\application\\dtos\\deliverydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Payment.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Payment.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Payment.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Payment.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:49.366Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "ApiGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\ApiGateway\\Program.cs",
+              "RelativeToolTip": "ApiGateway\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T10:22:08.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Services\\Restaurant.API\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T07:04:10.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Notification.API\\appsettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:25.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Delivery.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Delivery.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Delivery.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Delivery.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:59:05.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\DependencyInjection.cs",
+              "RelativeToolTip": "Services\\Identity.API\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T04:48:00.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T04:47:27.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Identity.API.csproj",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Identity.API.csproj",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Identity.API.csproj",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Identity.API.csproj",
+              "RelativeToolTip": "Services\\Identity.API\\Identity.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-15T04:47:06.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Infrastructure\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:59:18.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAcwJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:57:20.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminUsersController.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "RelativeToolTip": "Services\\Identity.API\\Controllers\\AdminUsersController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:49:38.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Identity.API\\appsettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T10:45:19.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Services\\Identity.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T10:41:17.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Services\\Identity.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Identity.API\\appsettings.Development.json",
+              "RelativeToolTip": "Services\\Identity.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T10:41:13.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\Program.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\Program.cs",
+              "RelativeToolTip": "Services\\Restaurant.API\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAwwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T10:19:46.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderPlacedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Consumers\\OrderPlacedConsumer.cs",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\Infrastructure\\Consumers\\OrderPlacedConsumer.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Consumers\\OrderPlacedConsumer.cs",
+              "RelativeToolTip": "Services\\Notification.API\\Infrastructure\\Consumers\\OrderPlacedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:46:18.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\DependencyInjection.cs",
+              "RelativeToolTip": "Services\\Notification.API\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:40:32.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\Infrastructure\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\Notification.API\\Infrastructure\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:38:20.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\Program.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Program.cs",
+              "RelativeToolTip": "Services\\Notification.API\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:36:06.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Notification.API.http",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Notification.API.http",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\Notification.API.http",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Notification.API.http",
+              "RelativeToolTip": "Services\\Notification.API\\Notification.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-04-10T05:36:05.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserRegisteredConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Consumers\\UserRegisteredConsumer.cs",
+              "RelativeDocumentMoniker": "Services\\Notification.API\\Infrastructure\\Consumers\\UserRegisteredConsumer.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Notification.API\\Infrastructure\\Consumers\\UserRegisteredConsumer.cs",
+              "RelativeToolTip": "Services\\Notification.API\\Infrastructure\\Consumers\\UserRegisteredConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:47:12.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RabbitMqSettings.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\Configuration\\RabbitMqSettings.cs",
+              "RelativeDocumentMoniker": "Shared\\FoodFleet.Shared.Messaging\\Configuration\\RabbitMqSettings.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\Configuration\\RabbitMqSettings.cs",
+              "RelativeToolTip": "Shared\\FoodFleet.Shared.Messaging\\Configuration\\RabbitMqSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:45:14.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\appsettings.json",
+              "RelativeToolTip": "Services\\Restaurant.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T04:42:58.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\ApiGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\ApiGateway\\appsettings.json",
+              "RelativeToolTip": "ApiGateway\\appsettings.json",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAswOEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T04:42:41.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MessagingExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\MessagingExtensions.cs",
+              "RelativeDocumentMoniker": "Shared\\FoodFleet.Shared.Messaging\\MessagingExtensions.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\MessagingExtensions.cs",
+              "RelativeToolTip": "Shared\\FoodFleet.Shared.Messaging\\MessagingExtensions.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvxAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:41:08.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FoodFleet.Shared.Messaging.csproj",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj",
+              "RelativeDocumentMoniker": "Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj",
+              "RelativeToolTip": "Shared\\FoodFleet.Shared.Messaging\\FoodFleet.Shared.Messaging.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-10T04:34:39.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Order.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Services\\Order.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Order.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Services\\Order.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:05:53.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Services\\Restaurant.API\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Restaurant.API\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Services\\Restaurant.API\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:04:04.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DeliveryDto.cs",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Delivery.API\\Application\\DTOs\\DeliveryDto.cs",
+              "RelativeDocumentMoniker": "Services\\Delivery.API\\Application\\DTOs\\DeliveryDto.cs",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Delivery.API\\Application\\DTOs\\DeliveryDto.cs",
+              "RelativeToolTip": "Services\\Delivery.API\\Application\\DTOs\\DeliveryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T17:17:23.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Delivery.API.csproj",
+              "DocumentMoniker": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Delivery.API\\Delivery.API.csproj",
+              "RelativeDocumentMoniker": "Services\\Delivery.API\\Delivery.API.csproj",
+              "ToolTip": "C:\\Users\\pawas\\OneDrive\\Desktop\\BackPro\\FoodFleetMicroservices\\Services\\Delivery.API\\Delivery.API.csproj",
+              "RelativeToolTip": "Services\\Delivery.API\\Delivery.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-09T17:17:14.994Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

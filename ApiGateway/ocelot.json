@@ -1,0 +1,148 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/auth/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5001 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "" }
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/admin/users/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/admin/users/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5001 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "identity"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/restaurants/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/restaurants/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "restaurant"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/restaurants",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamPathTemplate": "/api/v1/restaurants",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "restaurant"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/reviews/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/reviews/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
+      "SwaggerKey": "restaurant"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/admin/restaurants/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/admin/restaurants/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "restaurant"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/orders/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/orders/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5003 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "order"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/orders",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamPathTemplate": "/api/v1/orders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5003 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "order"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/admin/orders/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/admin/orders/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5003 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "order"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/payments/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/payments/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5004 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "payment"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/delivery/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/delivery/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5005 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "delivery"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/agents/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/agents/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5005 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "delivery"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/notifications/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "DownstreamPathTemplate": "/api/v1/notifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5006 } ],
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
+      "SwaggerKey": "notification"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "identity",
+      "Config": [ { "Name": "Identity API", "Version": "v1", "Url": "http://localhost:5001/swagger/v1/swagger.json" } ]
+    },
+    {
+      "Key": "restaurant",
+      "Config": [ { "Name": "Restaurant API", "Version": "v1", "Url": "http://localhost:5002/swagger/v1/swagger.json" } ]
+    },
+    {
+      "Key": "order",
+      "Config": [ { "Name": "Order API", "Version": "v1", "Url": "http://localhost:5003/swagger/v1/swagger.json" } ]
+    },
+    {
+      "Key": "payment",
+      "Config": [ { "Name": "Payment API", "Version": "v1", "Url": "http://localhost:5004/swagger/v1/swagger.json" } ]
+    },
+    {
+      "Key": "delivery",
+      "Config": [ { "Name": "Delivery API", "Version": "v1", "Url": "http://localhost:5005/swagger/v1/swagger.json" } ]
+    },
+    {
+      "Key": "notification",
+      "Config": [ { "Name": "Notification API", "Version": "v1", "Url": "http://localhost:5006/swagger/v1/swagger.json" } ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}
