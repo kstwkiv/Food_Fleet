@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 68px;
+  background: white;
+  border-bottom: 1px solid var(--gray-100);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.brand {
+  font-size: 1.45rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: opacity 0.2s;
+  &:hover { opacity: 0.85; }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  a {
+    text-decoration: none;
+    color: var(--gray-600);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.85rem;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s;
+    &:hover { color: var(--primary); background: var(--primary-light); }
+    &.active { color: var(--primary); font-weight: 600; }
+  }
+}
+
+.btn-nav {
+  background: var(--primary) !important;
+  color: white !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  &:hover { background: var(--primary-dark) !important; }
+}
+
+.btn-nav-outline {
+  border: 1.5px solid var(--gray-200) !important;
+  color: var(--gray-700) !important;
+  padding: 0.45rem 1rem !important;
+  border-radius: 8px !important;
+  &:hover { border-color: var(--primary) !important; color: var(--primary) !important; background: var(--primary-light) !important; }
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--gray-200);
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #f7931e);
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--gray-800);
+}
+
+.btn-logout {
+  background: none;
+  border: 1.5px solid var(--gray-200);
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: all 0.2s;
+  &:hover { border-color: var(--danger); color: var(--danger); background: #fff5f5; }
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 0 1rem; }
+  .user-name { display: none; }
+}

@@ -1,0 +1,75 @@
+.page { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; animation: fadeIn 0.3s ease; }
+
+.order-card, .delivery-card {
+  background: white; border-radius: var(--radius); padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.order-header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;
+  h2 { margin: 0; font-size: 1.3rem; font-weight: 800; }
+}
+
+.order-meta {
+  display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem;
+  .meta-chip {
+    background: var(--gray-50); border: 1px solid var(--gray-200);
+    padding: 0.35rem 0.8rem; border-radius: 20px; font-size: 0.8rem; color: var(--gray-600);
+  }
+}
+
+.items-list {
+  h3 { margin: 0 0 1rem; font-size: 1rem; font-weight: 700; }
+}
+
+.order-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.65rem 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9rem;
+  .item-name { color: var(--gray-700); }
+  .item-price { font-weight: 600; }
+}
+
+.total-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 800; font-size: 1.1rem; margin-top: 1rem;
+  padding-top: 0.75rem; border-top: 2px solid var(--gray-100);
+}
+
+/* Delivery tracking */
+.delivery-card {
+  h3 { margin: 0 0 1.25rem; font-size: 1.05rem; font-weight: 700; }
+}
+
+.tracking-steps {
+  display: flex; flex-direction: column; gap: 0;
+}
+
+.tracking-step {
+  display: flex; align-items: flex-start; gap: 1rem; padding-bottom: 1.25rem; position: relative;
+  &:last-child { padding-bottom: 0; }
+  &:not(:last-child)::after {
+    content: ''; position: absolute; left: 15px; top: 32px;
+    width: 2px; height: calc(100% - 16px); background: var(--gray-200);
+  }
+  &.done::after { background: var(--success); }
+}
+
+.step-icon {
+  width: 32px; height: 32px; border-radius: 50%; background: var(--gray-100);
+  display: flex; align-items: center; justify-content: center; font-size: 0.9rem;
+  flex-shrink: 0; position: relative; z-index: 1;
+  &.done { background: var(--success); }
+}
+
+.step-info {
+  .step-label { font-weight: 600; font-size: 0.9rem; }
+  .step-time { font-size: 0.78rem; color: var(--gray-500); }
+}
+
+.location-info {
+  background: var(--gray-50); border-radius: 8px; padding: 0.75rem 1rem;
+  font-size: 0.875rem; color: var(--gray-600); margin-top: 0.75rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+
+.loading { text-align: center; padding: 5rem; color: var(--gray-500); }

@@ -1,0 +1,139 @@
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .hero-content { position: relative; z-index: 1; }
+
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: rgba(255,107,53,0.2); border: 1px solid rgba(255,107,53,0.4);
+    color: #ff9a6c; padding: 0.35rem 0.9rem; border-radius: 20px;
+    font-size: 0.8rem; font-weight: 600; margin-bottom: 1.25rem; letter-spacing: 0.05em;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800; margin-bottom: 0.75rem; line-height: 1.15;
+    span { color: var(--primary); }
+  }
+
+  .hero-sub { font-size: 1.05rem; opacity: 0.7; margin-bottom: 2.5rem; }
+}
+
+.search-bar {
+  display: flex;
+  max-width: 580px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  background: white;
+
+  input {
+    flex: 1; padding: 1.1rem 1.5rem; border: none;
+    font-size: 1rem; color: var(--gray-800);
+    &:focus { outline: none; }
+    &::placeholder { color: var(--gray-400); }
+  }
+
+  button {
+    padding: 1.1rem 2rem; background: var(--primary); color: white;
+    border: none; font-size: 0.95rem; font-weight: 700; cursor: pointer;
+    transition: background 0.2s;
+    &:hover { background: var(--primary-dark); }
+  }
+}
+
+.hero-stats {
+  display: flex; justify-content: center; gap: 2.5rem; margin-top: 2.5rem;
+  position: relative; z-index: 1;
+  .stat { text-align: center; }
+  .stat-num { font-size: 1.5rem; font-weight: 800; color: white; }
+  .stat-lbl { font-size: 0.75rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.05em; }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.section-header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;
+  h2 { font-size: 1.35rem; font-weight: 700; }
+  .count { color: var(--gray-500); font-size: 0.875rem; }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: block;
+  &:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+}
+
+.card-img {
+  position: relative;
+  height: 185px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+
+  img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .card:hover img { transform: scale(1.04); }
+  .placeholder-img { font-size: 4.5rem; }
+}
+
+.card-badge {
+  position: absolute; top: 0.75rem; right: 0.75rem;
+  padding: 0.25rem 0.7rem; border-radius: 20px; font-size: 0.72rem; font-weight: 700;
+  backdrop-filter: blur(4px);
+  &.open { background: rgba(0,184,148,0.9); color: white; }
+  &.closed { background: rgba(214,48,49,0.85); color: white; }
+}
+
+.card-body {
+  padding: 1.25rem;
+  h3 { margin: 0 0 0.3rem; font-size: 1.05rem; font-weight: 700; }
+  .cuisine {
+    color: var(--gray-500); font-size: 0.8rem; margin-bottom: 0.9rem;
+    display: flex; align-items: center; gap: 0.3rem;
+  }
+}
+
+.card-meta {
+  display: flex; gap: 0; border-top: 1px solid var(--gray-100); margin: 0 -1.25rem -1.25rem;
+  .meta-item {
+    flex: 1; padding: 0.65rem 0.5rem; text-align: center; font-size: 0.78rem;
+    color: var(--gray-600); font-weight: 500;
+    border-right: 1px solid var(--gray-100);
+    &:last-child { border-right: none; }
+    .meta-val { font-weight: 700; color: var(--gray-800); display: block; font-size: 0.85rem; }
+  }
+}
+
+.loading-state, .empty-state {
+  text-align: center; padding: 5rem 2rem; color: var(--gray-500);
+  .icon { font-size: 3.5rem; margin-bottom: 1rem; }
+  p { font-size: 1rem; }
+}
