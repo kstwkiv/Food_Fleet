@@ -3,30 +3,46 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #ff6b35;
-  --primary-dark: #e55a24;
-  --primary-light: #fff3ee;
-  --secondary: #2d3436;
-  --success: #00b894;
-  --warning: #fdcb6e;
-  --danger: #d63031;
-  --info: #0984e3;
-  --gray-50: #f8f9fa;
-  --gray-100: #f1f3f5;
-  --gray-200: #e9ecef;
-  --gray-300: #dee2e6;
-  --gray-400: #ced4da;
-  --gray-500: #adb5bd;
-  --gray-600: #6c757d;
-  --gray-700: #495057;
-  --gray-800: #343a40;
-  --gray-900: #212529;
-  --white: #ffffff;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow: 0 4px 16px rgba(0,0,0,0.08);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+  --primary:        #7b3fb5;
+  --primary-dark:   #5e2e8a;
+  --primary-light:  #f0e8fa;
+  --accent:         #1a9090;
+  --accent-light:   #40b8b8;
+  --violet:         #5a5aaa;
+  --orchid:         #c060d0;
+
+  --bg:             #f5f0fc;
+  --surface:        #ffffff;
+  --surface-alt:    #ede5f8;
+  --border:         #d8caf0;
+
+  --text-primary:   #1e1030;
+  --text-secondary: #4a3870;
+  --text-muted:     #8870b0;
+
+  --success:  #1a9090;
+  --warning:  #c8a030;
+  --danger:   #c04060;
+  --info:     #5a5aaa;
+
+  --gray-50:  #f5f0fc;
+  --gray-100: #ede5f8;
+  --gray-200: #d8caf0;
+  --gray-300: #bba8e0;
+  --gray-400: #9880c8;
+  --gray-500: #7860a8;
+  --gray-600: #5a4488;
+  --gray-700: #3e2e68;
+  --gray-800: #2a1e50;
+  --gray-900: #1e1030;
+  --white:    #ffffff;
+
+  --shadow-sm: 0 1px 3px rgba(80,40,140,0.10);
+  --shadow:    0 4px 16px rgba(80,40,140,0.12);
+  --shadow-lg: 0 8px 32px rgba(80,40,140,0.18);
+
   --radius-sm: 6px;
-  --radius: 12px;
+  --radius:    12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --transition: 0.2s ease;
@@ -37,8 +53,8 @@ html { scroll-behavior: smooth; }
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: var(--gray-50);
-  color: var(--gray-900);
+  background: var(--bg);
+  color: var(--text-primary);
   line-height: 1.6;
   font-size: 15px;
 }
@@ -47,88 +63,77 @@ a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
 input, select, textarea { font-family: inherit; }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-track { background: var(--surface-alt); }
 ::-webkit-scrollbar-thumb { background: var(--gray-300); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gray-400); }
 
-/* Shared status badges */
 .status-badge {
   display: inline-flex; align-items: center; gap: 0.3rem;
   padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;
   letter-spacing: 0.02em; text-transform: capitalize;
-  &.placed    { background: #dbeafe; color: #1d4ed8; }
-  &.confirmed { background: #dcfce7; color: #15803d; }
-  &.preparing { background: #fef9c3; color: #a16207; }
-  &.ready     { background: #cffafe; color: #0e7490; }
-  &.delivered { background: #dcfce7; color: #15803d; }
-  &.cancelled { background: #fee2e2; color: #b91c1c; }
-  &.active    { background: #dcfce7; color: #15803d; }
-  &.pending   { background: #fef9c3; color: #a16207; }
-  &.suspended { background: #fee2e2; color: #b91c1c; }
+  &.placed    { background: #e0d8f8; color: #3a2880; }
+  &.confirmed { background: #d0f0f0; color: #0e6060; }
+  &.preparing { background: #fdf0d0; color: #7a5c00; }
+  &.ready     { background: #d0f0f0; color: #0e6060; }
+  &.delivered { background: #d0f0f0; color: #0e6060; }
+  &.cancelled { background: #f8d8e0; color: #8b1a30; }
+  &.active    { background: #d0f0f0; color: #0e6060; }
+  &.pending   { background: #ede0f8; color: #5e2e8a; }
+  &.suspended { background: #f8d8e0; color: #8b1a30; }
+  &.rejected  { background: #f8d8e0; color: #8b1a30; }
 }
 
-/* Shared loading/empty states */
 .loading-state, .empty-state {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 5rem 2rem; color: var(--gray-500); text-align: center;
+  padding: 5rem 2rem; color: var(--text-muted); text-align: center;
   .icon { font-size: 3rem; margin-bottom: 1rem; }
   p { font-size: 1rem; }
 }
 
-/* Page wrapper */
-.page-wrapper {
-  max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem;
-}
+.page-wrapper { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
 
-/* Card */
 .card {
-  background: var(--white); border-radius: var(--radius);
-  box-shadow: var(--shadow); overflow: hidden;
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden;
 }
 
-/* Btn base */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
   padding: 0.6rem 1.25rem; border-radius: var(--radius-sm); border: none;
   font-size: 0.9rem; font-weight: 600; transition: all var(--transition); cursor: pointer;
   &:disabled { opacity: 0.55; cursor: not-allowed; }
 }
-.btn-primary { background: var(--primary); color: white; &:hover:not(:disabled) { background: var(--primary-dark); } }
-.btn-secondary { background: var(--gray-100); color: var(--gray-800); border: 1px solid var(--gray-200); &:hover:not(:disabled) { background: var(--gray-200); } }
-.btn-success { background: var(--success); color: white; &:hover:not(:disabled) { background: #00a381; } }
-.btn-danger { background: var(--danger); color: white; &:hover:not(:disabled) { background: #c0392b; } }
-.btn-info { background: var(--info); color: white; &:hover:not(:disabled) { background: #0773c5; } }
-.btn-sm { padding: 0.35rem 0.8rem; font-size: 0.8rem; }
-.btn-lg { padding: 0.85rem 2rem; font-size: 1rem; border-radius: var(--radius); }
+.btn-primary   { background: var(--primary); color: white; &:hover:not(:disabled) { background: var(--primary-dark); } }
+.btn-secondary { background: var(--surface-alt); color: var(--text-primary); border: 1px solid var(--border); &:hover:not(:disabled) { background: var(--border); } }
+.btn-success   { background: var(--success); color: white; &:hover:not(:disabled) { background: #147070; } }
+.btn-danger    { background: var(--danger); color: white; &:hover:not(:disabled) { background: #a03050; } }
+.btn-sm  { padding: 0.35rem 0.8rem; font-size: 0.8rem; }
+.btn-lg  { padding: 0.85rem 2rem; font-size: 1rem; border-radius: var(--radius); }
 .btn-block { width: 100%; }
 
-/* Form fields */
 .form-field {
   margin-bottom: 1.25rem;
-  label { display: block; font-weight: 500; font-size: 0.875rem; margin-bottom: 0.4rem; color: var(--gray-700); }
+  label { display: block; font-weight: 500; font-size: 0.875rem; margin-bottom: 0.4rem; color: var(--text-secondary); }
   input, select, textarea {
-    width: 100%; padding: 0.7rem 1rem; border: 1.5px solid var(--gray-200);
-    border-radius: var(--radius-sm); font-size: 0.95rem; background: var(--white);
+    width: 100%; padding: 0.7rem 1rem; border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm); font-size: 0.95rem; background: var(--surface);
+    color: var(--text-primary);
     transition: border-color var(--transition), box-shadow var(--transition);
-    &:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(255,107,53,0.12); }
-    &::placeholder { color: var(--gray-400); }
+    &:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(123,63,181,0.15); }
+    &::placeholder { color: var(--text-muted); }
   }
 }
 
-/* Animations */
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 .fade-in { animation: fadeIn 0.3s ease; }
 
-/* Spinner */
 .spinner {
-  width: 20px; height: 20px; border: 2px solid rgba(255,255,255,0.3);
+  width: 20px; height: 20px; border: 2px solid rgba(255,255,255,0.35);
   border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite;
 }
 
-/* Number input */
+input[type="number"] { appearance: textfield; }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
-input[type="number"] { -moz-appearance: textfield; }

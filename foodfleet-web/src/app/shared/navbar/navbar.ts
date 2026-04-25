@@ -46,10 +46,10 @@ export class NavbarComponent {
 
   constructor(private auth: AuthService) {
     this.user = this.auth.currentUser;
-    this.isCustomer = computed(() => this.auth.role === 'Customer');
-    this.isOwner = computed(() => this.auth.role === 'RestaurantOwner');
-    this.isAdmin = computed(() => this.auth.role === 'Admin');
-    this.isAgent = computed(() => this.auth.role === 'DeliveryAgent');
+    this.isCustomer = computed(() => this.auth.currentUser()?.role === 'Customer');
+    this.isOwner    = computed(() => this.auth.currentUser()?.role === 'RestaurantOwner');
+    this.isAdmin    = computed(() => this.auth.currentUser()?.role === 'Admin');
+    this.isAgent    = computed(() => this.auth.currentUser()?.role === 'DeliveryAgent');
   }
 
   logout() { this.auth.logout(); }

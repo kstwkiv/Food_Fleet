@@ -8,7 +8,7 @@ import { NavbarComponent } from './shared/navbar/navbar';
   imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.html',
   styles: [`
-    :host { display: block; min-height: 100vh; background: #f8f9fa; }
+    :host { display: block; min-height: 100vh; background: var(--bg); }
   `]
 })
 export class App {}

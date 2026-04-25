@@ -1,49 +1,13 @@
 .page { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; animation: fadeIn 0.3s ease; }
-
-.page-header {
-  display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;
-  h2 { font-size: 1.6rem; font-weight: 800; }
-  .browse-link {
-    color: var(--primary); font-weight: 600; font-size: 0.875rem;
-    display: flex; align-items: center; gap: 0.3rem;
-    &:hover { text-decoration: underline; }
-  }
-}
-
-.orders-list { display: flex; flex-direction: column; gap: 0.85rem; }
-
-.order-row {
-  background: white; border-radius: var(--radius); padding: 1.25rem 1.5rem;
-  box-shadow: var(--shadow); display: flex; align-items: center; gap: 1.25rem;
-  flex-wrap: wrap; transition: box-shadow 0.2s;
-  &:hover { box-shadow: var(--shadow-lg); }
-}
-
-.order-info {
-  display: flex; flex-direction: column; gap: 0.2rem; min-width: 140px;
-  .order-id { font-weight: 700; font-size: 0.95rem; color: var(--gray-800); }
-  .date { font-size: 0.78rem; color: var(--gray-500); }
-}
-
-.order-meta {
-  display: flex; gap: 1.5rem; font-size: 0.875rem; color: var(--gray-600);
-  margin-left: auto;
-  .meta-item { display: flex; flex-direction: column; align-items: center; gap: 0.1rem; }
-  .meta-val { font-weight: 700; color: var(--gray-800); font-size: 0.95rem; }
-}
-
-.btn-view {
-  padding: 0.45rem 1.1rem; background: var(--primary); color: white;
-  border-radius: 8px; font-size: 0.85rem; font-weight: 600;
-  transition: background 0.2s;
-  &:hover { background: var(--primary-dark); }
-}
-
-.empty-state {
-  text-align: center; padding: 5rem 2rem; color: var(--gray-500);
-  .icon { font-size: 3.5rem; margin-bottom: 1rem; }
-  p { margin-bottom: 1.25rem; }
-  a { color: var(--primary); font-weight: 600; &:hover { text-decoration: underline; } }
-}
-
-.loading-state { text-align: center; padding: 5rem; color: var(--gray-500); }
+.page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; h2 { font-size: 1.6rem; font-weight: 800; color: var(--text-primary); margin: 0; } }
+.btn-browse { padding: 0.5rem 1.25rem; background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; border-radius: 8px; font-weight: 600; font-size: 0.875rem; &:hover { opacity: 0.88; } }
+.loading-state, .empty-state, .error-state { text-align: center; padding: 5rem 2rem; color: var(--text-muted); .icon { font-size: 3rem; margin-bottom: 1rem; } p { margin-bottom: 1.25rem; font-size: 0.95rem; } button { padding: 0.5rem 1.25rem; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; } }
+.orders-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.order-card { background: var(--surface); border-radius: var(--radius); padding: 1.25rem 1.5rem; box-shadow: var(--shadow); border: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 1rem; text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.15s; &:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); } }
+.order-left { display: flex; flex-direction: column; gap: 0.3rem; }
+.order-id { font-weight: 700; font-size: 0.95rem; color: var(--text-primary); }
+.order-date { font-size: 0.78rem; color: var(--text-muted); }
+.order-items { font-size: 0.82rem; color: var(--text-secondary); .item-names { color: var(--text-muted); } }
+.order-right { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; }
+.order-amount { font-weight: 800; font-size: 1.05rem; color: var(--accent); }
+.view-link { font-size: 0.8rem; color: var(--primary); font-weight: 600; }
