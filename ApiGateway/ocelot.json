@@ -14,8 +14,7 @@
       "DownstreamPathTemplate": "/api/v1/admin/users/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5001 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "identity"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/restaurants/my",
@@ -23,8 +22,7 @@
       "DownstreamPathTemplate": "/api/v1/restaurants/my",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/restaurants",
@@ -32,8 +30,7 @@
       "DownstreamPathTemplate": "/api/v1/restaurants",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/restaurants",
@@ -41,8 +38,7 @@
       "DownstreamPathTemplate": "/api/v1/restaurants",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/restaurants/{everything}",
@@ -50,8 +46,7 @@
       "DownstreamPathTemplate": "/api/v1/restaurants/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/restaurants/{everything}",
@@ -59,8 +54,7 @@
       "DownstreamPathTemplate": "/api/v1/restaurants/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/reviews/{everything}",
@@ -68,8 +62,7 @@
       "DownstreamPathTemplate": "/api/v1/reviews/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/menu/{everything}",
@@ -77,8 +70,7 @@
       "DownstreamPathTemplate": "/api/v1/menu/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/menu/{everything}",
@@ -86,8 +78,7 @@
       "DownstreamPathTemplate": "/api/v1/menu/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/image/{everything}",
@@ -95,8 +86,7 @@
       "DownstreamPathTemplate": "/api/v1/image/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/admin/restaurants/{everything}",
@@ -104,8 +94,7 @@
       "DownstreamPathTemplate": "/api/v1/admin/restaurants/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/admin/restaurants",
@@ -113,8 +102,7 @@
       "DownstreamPathTemplate": "/api/v1/admin/restaurants",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "restaurant"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/orders/{everything}",
@@ -122,8 +110,7 @@
       "DownstreamPathTemplate": "/api/v1/orders/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5003 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "order"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/orders",
@@ -131,8 +118,7 @@
       "DownstreamPathTemplate": "/api/v1/orders",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5003 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "order"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/admin/orders/{everything}",
@@ -140,8 +126,7 @@
       "DownstreamPathTemplate": "/api/v1/admin/orders/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5003 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "order"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/payments/{everything}",
@@ -149,8 +134,7 @@
       "DownstreamPathTemplate": "/api/v1/payments/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5004 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "payment"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/delivery/{everything}",
@@ -158,8 +142,7 @@
       "DownstreamPathTemplate": "/api/v1/delivery/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5005 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "delivery"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/agents/{everything}",
@@ -167,8 +150,7 @@
       "DownstreamPathTemplate": "/api/v1/agents/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5005 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "delivery"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     },
     {
       "UpstreamPathTemplate": "/api/v1/notifications/{everything}",
@@ -176,8 +158,7 @@
       "DownstreamPathTemplate": "/api/v1/notifications/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5006 } ],
-      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" },
-      "SwaggerKey": "notification"
+      "AuthenticationOptions": { "AuthenticationProviderKey": "Bearer" }
     }
   ],
   "SwaggerEndPoints": [

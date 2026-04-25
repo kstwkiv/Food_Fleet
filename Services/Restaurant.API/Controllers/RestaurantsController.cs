@@ -20,6 +20,7 @@ public class RestaurantsController : ControllerBase
         _unitOfWork = unitOfWork;
     }
 
+    // GET /api/v1/restaurants  — public
     [HttpGet]
     [AllowAnonymous]
     public async Task<IActionResult> GetAll([FromQuery] string? search)
@@ -28,28 +29,33 @@ public class RestaurantsController : ControllerBase
         return Ok(result);
     }
 
-    [HttpGet("search")]
-    [AllowAnonymous]
-    public async Task<IActionResult> Search([FromQuery] string q)
+    // GET /api/v1/restaurants/my  — owner sees their own restaurant regardless of status
+    [HttpGet("my")]
+    [Authorize(Roles = "RestaurantOwner")]
+    public async Task<IActionResult> GetMine()
     {
-        var result = await _unitOfWork.Restaurants.SearchAsync(q ?? string.Empty);
-        return Ok(result.Select(r => new RestaurantDto
+        var ownerId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var restaurant = await _unitOfWork.Restaurants.GetByOwnerIdAsync(ownerId);
+        if (restaurant == null) return NotFound();
+        return Ok(new RestaurantDto
         {
-            Id = r.Id,
-            OwnerId = r.OwnerId,
-            Name = r.Name,
-            Description = r.Description,
-            Address = r.Address,
-            CuisineTypes = r.CuisineTypes,
-            Status = r.Status.ToString(),
-            IsOpen = r.IsOpen,
-            MinimumOrderAmount = r.MinimumOrderAmount,
-            EstimatedDeliveryMinutes = r.EstimatedDeliveryMinutes,
-            AverageRating = r.AverageRating,
-            TotalReviews = r.TotalReviews
-        }));
+            Id = restaurant.Id,
+            OwnerId = restaurant.OwnerId,
+            Name = restaurant.Name,
+            Description = restaurant.Description,
+            Address = restaurant.Address,
+            CuisineTypes = restaurant.CuisineTypes,
+            AverageRating = restaurant.AverageRating,
+            TotalReviews = restaurant.TotalReviews,
+            IsOpen = restaurant.IsOpen,
+            EstimatedDeliveryMinutes = restaurant.EstimatedDeliveryMinutes,
+            MinimumOrderAmount = restaurant.MinimumOrderAmount,
+            Status = restaurant.Status.ToString(),
+            LogoUrl = restaurant.LogoUrl
+        });
     }
 
+    // GET /api/v1/restaurants/{id}  — public
     [HttpGet("{id}")]
     [AllowAnonymous]
     public async Task<IActionResult> GetById(Guid id)
@@ -59,14 +65,17 @@ public class RestaurantsController : ControllerBase
         return Ok(result);
     }
 
+    // POST /api/v1/restaurants  — RestaurantOwner or Admin
     [HttpPost]
     [Authorize(Roles = "RestaurantOwner,Admin")]
     public async Task<IActionResult> Create([FromBody] CreateRestaurantRequest request)
     {
         var ownerId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var ownerEmail = User.FindFirstValue(ClaimTypes.Email) ?? string.Empty;
 
         var command = new CreateRestaurantCommand(
             ownerId,
+            ownerEmail,
             request.Name,
             request.Description,
             request.Address,
@@ -75,12 +84,14 @@ public class RestaurantsController : ControllerBase
             request.CuisineTypes,
             request.OperatingHours,
             request.MinimumOrderAmount,
-            request.EstimatedDeliveryMinutes);
+            request.EstimatedDeliveryMinutes,
+            request.LogoUrl);
 
         var result = await _restaurantService.CreateAsync(command);
         return Ok(result);
     }
 
+    // PATCH /api/v1/restaurants/{id}/availability
     [HttpPatch("{id}/availability")]
     [Authorize(Roles = "RestaurantOwner,Admin")]
     public async Task<IActionResult> ToggleAvailability(Guid id)

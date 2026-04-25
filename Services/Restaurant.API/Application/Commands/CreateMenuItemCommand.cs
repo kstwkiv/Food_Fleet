@@ -1,5 +1,3 @@
-using Restaurant.API.Application.DTOs;
-
 namespace Restaurant.API.Application.Commands;
 
 public record CreateMenuItemCommand(
@@ -7,4 +5,5 @@ public record CreateMenuItemCommand(
     string Name,
     string Description,
     decimal Price,
-    string DietaryTags);
+    string DietaryTags,
+    string? ImageUrl = null);

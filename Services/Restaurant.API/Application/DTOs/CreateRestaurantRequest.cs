@@ -11,4 +11,5 @@ public class CreateRestaurantRequest
     public string OperatingHours { get; set; } = string.Empty;
     public double MinimumOrderAmount { get; set; }
     public int EstimatedDeliveryMinutes { get; set; }
+    public string? LogoUrl { get; set; }
 }

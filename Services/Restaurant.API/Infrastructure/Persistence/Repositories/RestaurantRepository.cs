@@ -39,6 +39,10 @@ public class RestaurantRepository : IRestaurantRepository
             .ThenInclude(c => c.MenuItems)
             .FirstOrDefaultAsync(r => r.Id == id);
 
+    public async Task<Domain.Entities.Restaurant?> GetByOwnerIdAsync(Guid ownerId) =>
+        await _context.Restaurants
+            .FirstOrDefaultAsync(r => r.OwnerId == ownerId);
+
     public async Task AddAsync(Domain.Entities.Restaurant restaurant) =>
         await _context.Restaurants.AddAsync(restaurant);
 

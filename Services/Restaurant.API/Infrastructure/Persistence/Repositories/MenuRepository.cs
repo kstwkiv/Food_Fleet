@@ -20,6 +20,21 @@ public class MenuRepository : IMenuRepository
             .OrderBy(c => c.SortOrder)
             .ToListAsync();
 
+    public async Task AddCategoryAsync(MenuCategory category) =>
+        await _context.MenuCategories.AddAsync(category);
+
     public async Task AddItemAsync(MenuItem item) =>
         await _context.MenuItems.AddAsync(item);
+
+    public async Task<MenuCategory?> GetCategoryByIdAsync(Guid categoryId) =>
+        await _context.MenuCategories.FindAsync(categoryId);
+
+    public async Task<MenuItem?> GetItemByIdAsync(Guid itemId) =>
+        await _context.MenuItems.FindAsync(itemId);
+
+    public void UpdateItem(MenuItem item) =>
+        _context.MenuItems.Update(item);
+
+    public void DeleteItem(MenuItem item) =>
+        _context.MenuItems.Remove(item);
 }

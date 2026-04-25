@@ -35,6 +35,7 @@ public class RestaurantService : IRestaurantService
         var restaurant = new Domain.Entities.Restaurant
         {
             OwnerId = request.OwnerId,
+            OwnerEmail = request.OwnerEmail,
             Name = request.Name,
             Description = request.Description,
             Address = request.Address,
@@ -44,7 +45,8 @@ public class RestaurantService : IRestaurantService
             OperatingHours = request.OperatingHours,
             MinimumOrderAmount = request.MinimumOrderAmount,
             EstimatedDeliveryMinutes = request.EstimatedDeliveryMinutes,
-            Status = RestaurantStatus.Pending
+            Status = RestaurantStatus.Pending,
+            LogoUrl = request.LogoUrl
         };
 
         await _unitOfWork.Restaurants.AddAsync(restaurant);
@@ -85,7 +87,8 @@ public class RestaurantService : IRestaurantService
             Description = request.Description,
             Price = request.Price,
             DietaryTags = request.DietaryTags,
-            IsAvailable = true
+            IsAvailable = true,
+            ImageUrl = request.ImageUrl
         };
 
         await _unitOfWork.Menus.AddItemAsync(item);

@@ -1,9 +1,8 @@
-using Restaurant.API.Application.DTOs;
-
 namespace Restaurant.API.Application.Commands;
 
 public record CreateRestaurantCommand(
     Guid OwnerId,
+    string OwnerEmail,
     string Name,
     string Description,
     string Address,
@@ -12,4 +11,5 @@ public record CreateRestaurantCommand(
     string CuisineTypes,
     string OperatingHours,
     double MinimumOrderAmount,
-    int EstimatedDeliveryMinutes);
+    int EstimatedDeliveryMinutes,
+    string? LogoUrl = null);
