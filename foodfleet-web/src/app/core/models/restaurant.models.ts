@@ -24,6 +24,7 @@ export interface CreateRestaurantRequest {
   operatingHours: string;
   minimumOrderAmount: number;
   estimatedDeliveryMinutes: number;
+  logoUrl?: string;
 }
 
 export interface MenuItemDto {
@@ -34,6 +35,7 @@ export interface MenuItemDto {
   dietaryTags: string;
   isAvailable: boolean;
   categoryId: string;
+  imageUrl?: string;
 }
 
 export interface MenuCategoryDto {
