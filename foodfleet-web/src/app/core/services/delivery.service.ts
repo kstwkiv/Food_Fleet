@@ -14,6 +14,10 @@ export class DeliveryService {
     return this.http.get<DeliveryDto>(`${this.base}/${orderId}`);
   }
 
+  getMyDelivery() {
+    return this.http.get<any>(`${this.base}/my`);
+  }
+
   updateLocation(agentId: string, lat: number, lng: number) {
     return this.http.patch(`${this.base}/location`, { agentId, lat, lng });
   }

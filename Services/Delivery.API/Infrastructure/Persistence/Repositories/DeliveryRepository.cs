@@ -20,6 +20,13 @@ public class DeliveryRepository : IDeliveryRepository
             .Include(d => d.Agent)
             .FirstOrDefaultAsync(d => d.OrderId == orderId);
 
+    public async Task<DeliveryEntity?> GetByAgentIdAsync(Guid agentId) =>
+        await _context.Deliveries
+            .Include(d => d.Agent)
+            .Where(d => d.AgentId == agentId && d.Status == "Assigned")
+            .OrderByDescending(d => d.AssignedAt)
+            .FirstOrDefaultAsync();
+
     public async Task<DeliveryAgent?> GetAvailableAgentAsync() =>
         await _context.DeliveryAgents.FirstOrDefaultAsync(a => a.IsAvailable);
 

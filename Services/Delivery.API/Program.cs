@@ -13,6 +13,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDeliveryServices(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Angular", policy =>
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials());
+});
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -110,6 +119,7 @@ if (app.Environment.IsDevelopment())
 }
 
 if (!app.Environment.IsDevelopment()) app.UseHttpsRedirection();
+app.UseCors("Angular");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

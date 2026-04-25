@@ -12,10 +12,12 @@ namespace Delivery.API.Controllers;
 public class DeliveryController : ControllerBase
 {
     private readonly IDeliveryService _deliveryService;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public DeliveryController(IDeliveryService deliveryService)
+    public DeliveryController(IDeliveryService deliveryService, IUnitOfWork unitOfWork)
     {
         _deliveryService = deliveryService;
+        _unitOfWork = unitOfWork;
     }
 
     [HttpPost("assign")]
@@ -50,5 +52,28 @@ public class DeliveryController : ControllerBase
         var delivery = await _deliveryService.GetByOrderAsync(orderId);
         if (delivery == null) return NotFound();
         return Ok(delivery);
+    }
+
+    [HttpGet("my")]
+    [Authorize(Roles = "DeliveryAgent")]
+    public async Task<IActionResult> GetMyDelivery()
+    {
+        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var agent = await _unitOfWork.Agents.GetByUserIdAsync(userId);
+        if (agent == null) return NotFound("Agent profile not found.");
+
+        var delivery = await _unitOfWork.Deliveries.GetByAgentIdAsync(agent.Id);
+        if (delivery == null) return NotFound("No active delivery.");
+
+        return Ok(new
+        {
+            delivery.Id,
+            delivery.OrderId,
+            delivery.Status,
+            delivery.CurrentLat,
+            delivery.CurrentLng,
+            delivery.AssignedAt,
+            delivery.CompletedAt
+        });
     }
 }
