@@ -27,7 +27,7 @@ export class RestaurantService {
   }
 
   getMyRestaurant() {
-    return this.http.get<RestaurantDto>(`${this.base}/my`);
+    return this.http.get<RestaurantDto[]>(`${this.base}/my`);
   }
 
   getById(id: string) {

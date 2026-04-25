@@ -43,6 +43,12 @@ public class RestaurantRepository : IRestaurantRepository
         await _context.Restaurants
             .FirstOrDefaultAsync(r => r.OwnerId == ownerId);
 
+    public async Task<IEnumerable<Domain.Entities.Restaurant>> GetAllByOwnerIdAsync(Guid ownerId) =>
+        await _context.Restaurants
+            .Where(r => r.OwnerId == ownerId)
+            .OrderByDescending(r => r.CreatedAt)
+            .ToListAsync();
+
     public async Task AddAsync(Domain.Entities.Restaurant restaurant) =>
         await _context.Restaurants.AddAsync(restaurant);
 

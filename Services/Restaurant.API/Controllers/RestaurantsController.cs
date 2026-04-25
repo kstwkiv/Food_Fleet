@@ -29,30 +29,29 @@ public class RestaurantsController : ControllerBase
         return Ok(result);
     }
 
-    // GET /api/v1/restaurants/my  — owner sees their own restaurant regardless of status
+    // GET /api/v1/restaurants/my  — owner sees all their restaurants regardless of status
     [HttpGet("my")]
     [Authorize(Roles = "RestaurantOwner")]
     public async Task<IActionResult> GetMine()
     {
         var ownerId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
-        var restaurant = await _unitOfWork.Restaurants.GetByOwnerIdAsync(ownerId);
-        if (restaurant == null) return NotFound();
-        return Ok(new RestaurantDto
+        var restaurants = await _unitOfWork.Restaurants.GetAllByOwnerIdAsync(ownerId);
+        return Ok(restaurants.Select(r => new RestaurantDto
         {
-            Id = restaurant.Id,
-            OwnerId = restaurant.OwnerId,
-            Name = restaurant.Name,
-            Description = restaurant.Description,
-            Address = restaurant.Address,
-            CuisineTypes = restaurant.CuisineTypes,
-            AverageRating = restaurant.AverageRating,
-            TotalReviews = restaurant.TotalReviews,
-            IsOpen = restaurant.IsOpen,
-            EstimatedDeliveryMinutes = restaurant.EstimatedDeliveryMinutes,
-            MinimumOrderAmount = restaurant.MinimumOrderAmount,
-            Status = restaurant.Status.ToString(),
-            LogoUrl = restaurant.LogoUrl
-        });
+            Id = r.Id,
+            OwnerId = r.OwnerId,
+            Name = r.Name,
+            Description = r.Description,
+            Address = r.Address,
+            CuisineTypes = r.CuisineTypes,
+            AverageRating = r.AverageRating,
+            TotalReviews = r.TotalReviews,
+            IsOpen = r.IsOpen,
+            EstimatedDeliveryMinutes = r.EstimatedDeliveryMinutes,
+            MinimumOrderAmount = r.MinimumOrderAmount,
+            Status = r.Status.ToString(),
+            LogoUrl = r.LogoUrl
+        }));
     }
 
     // GET /api/v1/restaurants/{id}  — public
