@@ -22,7 +22,7 @@ export interface PlaceOrderRequest {
   restaurantId: string;
   deliveryAddress: string;
   paymentMethod: number;
-  items: { menuItemId: string; quantity: number; unitPrice: number; customizations?: string }[];
+  items: { menuItemId: string; menuItemName: string; quantity: number; unitPrice: number; customizations?: string }[];
 }
 
 export interface OrderStats {
